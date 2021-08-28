@@ -1,0 +1,92 @@
+<style>
+  body{
+    background-color: black;
+    background-image: url('https://media.giphy.com/media/10X5oVBTgURLtC/giphy.gif');
+    background-image: url('https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif');
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+
+  }
+</style>
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
+      <% include ./partials/messages %>
+      <form action="/users/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="text">Type of account</label>
+          <input
+            type="name"  
+            id="text"
+            name="text"
+            class="form-control"
+            placeholder="Enter type of account"
+          />
+
+
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="text">Addres</label>
+          <input
+            type="name"  
+            id="address"
+            name="address"
+            class="form-control"
+            placeholder="Address"
+          />
+        </div>
+
+        
+        <div class="form-group">
+          <label for="text">What do you want to donate ? </label>
+          <input
+            type="name"  
+            id="donate"
+            name="donate"
+            class="form-control"
+            placeholder="Donate"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="text">Quantity</label>
+          <input
+            type="Integer"  
+            id="quantity"
+            name="quantity"
+            class="form-control"
+            placeholder="Quantity"
+          />
+        </div> -->
+
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+      <p class="lead mt-4">
+        No Account? <a href="/users/register">Register</a>
+      </p>
+    </div>
+  </div>
+</div>
